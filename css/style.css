@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #dddddd;
+    font-family:Arial,sans-serif;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: #fff;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    max-height:95vh;
+    overflow: hidden;
+    overflow-y:auto;
+    margin: 15px 0;
+    border-radius: 5px;
+    justify-content:flex-start;
+}
+
+.container::-webkit-scrollbar{
+    width:8px;
+}
+
+.container::-webkit-scrollbar-track{
+    width:8px;
+    background:none;
+}
+
+.container::-webkit-scrollbar-thumb{
+    background-color: #b1b1b1;
+    border-radius:5px;
+}
+
+.container h2{
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.container h2 i{
+    margin: 0 10px;
+}
+
+.input{
+    display: flex;
+    position: sticky;
+    top: -20px;;
+    background-color: #ffff;
+    padding: 15px 0;
+}
+
+
+.input input{
+    width: 100%;
+    height: 40px;
+    max-height: 100%;
+    border: 1px solid #b3aeae;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-size: 17px;
+}
+
+.input input.active{
+    border: 1px solid red;
+    color: red;
+    place-content: "Enter note";
+}
+
+.input button{
+    height: 40px;
+    min-width:80px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #2b70be;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left:10px;
+}
+
+.notes{
+    padding: 10px 0;
+}
+
+.notes li{
+    list-style: none;
+    background-color:#dbdbdb;
+    border-radius: 5px;
+    padding:0 10px;
+    min-height:33px;
+    font-size: 18px;
+    margin: 5px 0;
+    line-height: 33px;
+} 
+
+.notes li.active{
+    display: none;
+}
+
+.notes li i{
+    float: right;
+    cursor: pointer;
+    color:red;
+    line-height: 33px;
+    font-size: 18px;
+}
