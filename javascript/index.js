@@ -1,13 +1,11 @@
 document.addEventListener('DOMContentLoaded',()=>{
     let input = document.getElementById('input'); 
     let error = document.getElementById('error'); 
-    let counter = 0;
     function addNotes(){
-        counter++;
         let notes = document.getElementById('notes');
         let value = input.value;
         let li = document.createElement('li');
-        li.innerHTML = `<li>${counter}.${value}<i id="trash" class = "fa-solid fa-trash"></i></li>`;
+        li.innerHTML = `<li>${value}<i id="trash" class = "fa-solid fa-trash"></i></li>`;
         notes.appendChild(li);
         let trash = document.querySelectorAll('#trash');
         trash.forEach(e=>{
